@@ -31,8 +31,7 @@
     NKProfileViewController * profile = [[NKProfileViewController alloc] init];
     [self addChildVc:profile title:@"我的" image:@"tabbar_profile"];
     
-    
-}
+};
 
 - (void)addChildVc:(UIViewController *)chiledVc title:(NSString *)title image:(NSString *)image
 {

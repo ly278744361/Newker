@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NKSearchBar : UITextField
+@interface NKSearchBar : UITextField<UITextFieldDelegate>
 
 + (instancetype)searchBar;
 

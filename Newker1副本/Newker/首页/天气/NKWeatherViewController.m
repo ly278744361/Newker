@@ -32,11 +32,10 @@
     
     NKSearchBar * searchBar = [NKSearchBar searchBar];
     searchBar.frame = CGRectMake(10, 70, self.view.bounds.size.width - 20, 30);
+    searchBar.keyboardType = UIKeyboardTypeEmailAddress;
+    searchBar.returnKeyType = UIReturnKeyDone;
     [self.view addSubview:searchBar];
-    
-    
-    
-    
+
     
 }
 
