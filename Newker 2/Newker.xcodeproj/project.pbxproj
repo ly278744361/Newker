@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C20E10B11B0DE0F20004AF7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10B01B0DE0F20004AF7F /* main.m */; };
+		C20E10B41B0DE0F20004AF7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10B31B0DE0F20004AF7F /* AppDelegate.m */; };
+		C20E10BC1B0DE0F20004AF7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20E10BB1B0DE0F20004AF7F /* Images.xcassets */; };
+		C20E10BF1B0DE0F20004AF7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20E10BD1B0DE0F20004AF7F /* LaunchScreen.xib */; };
+		C20E10CB1B0DE0F20004AF7F /* NewkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10CA1B0DE0F20004AF7F /* NewkerTests.m */; };
+		C20E10F41B0DE14C0004AF7F /* NKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10D91B0DE14C0004AF7F /* NKHomeViewController.m */; };
+		C20E10F51B0DE14C0004AF7F /* NKWeatherTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10DC1B0DE14C0004AF7F /* NKWeatherTableViewController.m */; };
+		C20E10F61B0DE14C0004AF7F /* NKWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10DE1B0DE14C0004AF7F /* NKWeatherViewController.m */; };
+		C20E10F71B0DE14C0004AF7F /* NKNewsbreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10E11B0DE14C0004AF7F /* NKNewsbreakViewController.m */; };
+		C20E10F81B0DE14C0004AF7F /* NKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10E41B0DE14C0004AF7F /* NKProfileViewController.m */; };
+		C20E10F91B0DE14C0004AF7F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10E81B0DE14C0004AF7F /* UIBarButtonItem+Extension.m */; };
+		C20E10FA1B0DE14C0004AF7F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10EA1B0DE14C0004AF7F /* UIView+Extension.m */; };
+		C20E10FB1B0DE14C0004AF7F /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10ED1B0DE14C0004AF7F /* NKNavigationController.m */; };
+		C20E10FC1B0DE14C0004AF7F /* NKTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10EF1B0DE14C0004AF7F /* NKTabBarViewController.m */; };
+		C20E10FD1B0DE14C0004AF7F /* NKSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E10F21B0DE14C0004AF7F /* NKSearchBar.m */; };
+		C2501A5D1B0DF6C90083CA08 /* contenttoolbar_hd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A521B0DF6C90083CA08 /* contenttoolbar_hd_back.png */; };
+		C2501A5E1B0DF6C90083CA08 /* contenttoolbar_hd_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A531B0DF6C90083CA08 /* contenttoolbar_hd_back@2x.png */; };
+		C2501A5F1B0DF6C90083CA08 /* contenttoolbar_hd_back_light.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A541B0DF6C90083CA08 /* contenttoolbar_hd_back_light.png */; };
+		C2501A601B0DF6C90083CA08 /* contenttoolbar_hd_back_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A551B0DF6C90083CA08 /* contenttoolbar_hd_back_light@2x.png */; };
+		C2501A611B0DF6C90083CA08 /* easyicon_net_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A561B0DF6C90083CA08 /* easyicon_net_24.png */; };
+		C2501A621B0DF6C90083CA08 /* easyicon_net_25.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A571B0DF6C90083CA08 /* easyicon_net_25.png */; };
+		C2501A631B0DF6C90083CA08 /* newchannel_table@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A581B0DF6C90083CA08 /* newchannel_table@2x.png */; };
+		C2501A641B0DF6C90083CA08 /* newchannel_table@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A591B0DF6C90083CA08 /* newchannel_table@3x.png */; };
+		C2501A651B0DF6C90083CA08 /* tabbar_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A5A1B0DF6C90083CA08 /* tabbar_discover@2x.png */; };
+		C2501A661B0DF6C90083CA08 /* tabbar_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A5B1B0DF6C90083CA08 /* tabbar_home@2x.png */; };
+		C2501A671B0DF6C90083CA08 /* tabbar_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A5C1B0DF6C90083CA08 /* tabbar_profile@2x.png */; };
+		C2501A6B1B0DFBFC0083CA08 /* NKHotspotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2501A6A1B0DFBFC0083CA08 /* NKHotspotViewController.m */; };
+		C2501A711B0DFDA30083CA08 /* navigationbar_arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A701B0DFDA30083CA08 /* navigationbar_arrow_down@2x.png */; };
+		C2501A731B0DFDAD0083CA08 /* navigationbar_arrow_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A721B0DFDAD0083CA08 /* navigationbar_arrow_up@2x.png */; };
+		C2501A7B1B0E0D430083CA08 /* popover_background_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A7A1B0E0D430083CA08 /* popover_background_right@2x.png */; };
+		C2501A7D1B0E1FD20083CA08 /* searchbar_textfield_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A7C1B0E1FD20083CA08 /* searchbar_textfield_background@2x.png */; };
+		C2501A7F1B0E1FE30083CA08 /* searchbar_textfield_search_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2501A7E1B0E1FE30083CA08 /* searchbar_textfield_search_icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C20E10C51B0DE0F20004AF7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20E10A31B0DE0F20004AF7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C20E10AA1B0DE0F20004AF7F;
+			remoteInfo = Newker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C20E10AB1B0DE0F20004AF7F /* Newker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20E10AF1B0DE0F20004AF7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20E10B01B0DE0F20004AF7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C20E10B21B0DE0F20004AF7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C20E10B31B0DE0F20004AF7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C20E10BB1B0DE0F20004AF7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C20E10BE1B0DE0F20004AF7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C20E10C41B0DE0F20004AF7F /* NewkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20E10C91B0DE0F20004AF7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20E10CA1B0DE0F20004AF7F /* NewkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewkerTests.m; sourceTree = "<group>"; };
+		C20E10D81B0DE14C0004AF7F /* NKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeViewController.h; sourceTree = "<group>"; };
+		C20E10D91B0DE14C0004AF7F /* NKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeViewController.m; sourceTree = "<group>"; };
+		C20E10DB1B0DE14C0004AF7F /* NKWeatherTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKWeatherTableViewController.h; sourceTree = "<group>"; };
+		C20E10DC1B0DE14C0004AF7F /* NKWeatherTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKWeatherTableViewController.m; sourceTree = "<group>"; };
+		C20E10DD1B0DE14C0004AF7F /* NKWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKWeatherViewController.h; sourceTree = "<group>"; };
+		C20E10DE1B0DE14C0004AF7F /* NKWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKWeatherViewController.m; sourceTree = "<group>"; };
+		C20E10E01B0DE14C0004AF7F /* NKNewsbreakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNewsbreakViewController.h; sourceTree = "<group>"; };
+		C20E10E11B0DE14C0004AF7F /* NKNewsbreakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNewsbreakViewController.m; sourceTree = "<group>"; };
+		C20E10E31B0DE14C0004AF7F /* NKProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKProfileViewController.h; sourceTree = "<group>"; };
+		C20E10E41B0DE14C0004AF7F /* NKProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKProfileViewController.m; sourceTree = "<group>"; };
+		C20E10E71B0DE14C0004AF7F /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		C20E10E81B0DE14C0004AF7F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		C20E10E91B0DE14C0004AF7F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		C20E10EA1B0DE14C0004AF7F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		C20E10EC1B0DE14C0004AF7F /* NKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNavigationController.h; sourceTree = "<group>"; };
+		C20E10ED1B0DE14C0004AF7F /* NKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNavigationController.m; sourceTree = "<group>"; };
+		C20E10EE1B0DE14C0004AF7F /* NKTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTabBarViewController.h; sourceTree = "<group>"; };
+		C20E10EF1B0DE14C0004AF7F /* NKTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTabBarViewController.m; sourceTree = "<group>"; };
+		C20E10F11B0DE14C0004AF7F /* NKSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSearchBar.h; sourceTree = "<group>"; };
+		C20E10F21B0DE14C0004AF7F /* NKSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSearchBar.m; sourceTree = "<group>"; };
+		C2501A501B0DF50E0083CA08 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C2501A521B0DF6C90083CA08 /* contenttoolbar_hd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contenttoolbar_hd_back.png; sourceTree = "<group>"; };
+		C2501A531B0DF6C90083CA08 /* contenttoolbar_hd_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contenttoolbar_hd_back@2x.png"; sourceTree = "<group>"; };
+		C2501A541B0DF6C90083CA08 /* contenttoolbar_hd_back_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contenttoolbar_hd_back_light.png; sourceTree = "<group>"; };
+		C2501A551B0DF6C90083CA08 /* contenttoolbar_hd_back_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contenttoolbar_hd_back_light@2x.png"; sourceTree = "<group>"; };
+		C2501A561B0DF6C90083CA08 /* easyicon_net_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easyicon_net_24.png; sourceTree = "<group>"; };
+		C2501A571B0DF6C90083CA08 /* easyicon_net_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easyicon_net_25.png; sourceTree = "<group>"; };
+		C2501A581B0DF6C90083CA08 /* newchannel_table@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newchannel_table@2x.png"; sourceTree = "<group>"; };
+		C2501A591B0DF6C90083CA08 /* newchannel_table@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newchannel_table@3x.png"; sourceTree = "<group>"; };
+		C2501A5A1B0DF6C90083CA08 /* tabbar_discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover@2x.png"; sourceTree = "<group>"; };
+		C2501A5B1B0DF6C90083CA08 /* tabbar_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@2x.png"; sourceTree = "<group>"; };
+		C2501A5C1B0DF6C90083CA08 /* tabbar_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@2x.png"; sourceTree = "<group>"; };
+		C2501A691B0DFBFC0083CA08 /* NKHotspotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHotspotViewController.h; sourceTree = "<group>"; };
+		C2501A6A1B0DFBFC0083CA08 /* NKHotspotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHotspotViewController.m; sourceTree = "<group>"; };
+		C2501A701B0DFDA30083CA08 /* navigationbar_arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_arrow_down@2x.png"; sourceTree = "<group>"; };
+		C2501A721B0DFDAD0083CA08 /* navigationbar_arrow_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_arrow_up@2x.png"; sourceTree = "<group>"; };
+		C2501A7A1B0E0D430083CA08 /* popover_background_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover_background_right@2x.png"; sourceTree = "<group>"; };
+		C2501A7C1B0E1FD20083CA08 /* searchbar_textfield_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchbar_textfield_background@2x.png"; sourceTree = "<group>"; };
+		C2501A7E1B0E1FE30083CA08 /* searchbar_textfield_search_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchbar_textfield_search_icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C20E10A81B0DE0F20004AF7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C20E10C11B0DE0F20004AF7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C20E10A21B0DE0F20004AF7F = {
+			isa = PBXGroup;
+			children = (
+				C20E10AD1B0DE0F20004AF7F /* Newker */,
+				C20E10C71B0DE0F20004AF7F /* NewkerTests */,
+				C20E10AC1B0DE0F20004AF7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C20E10AC1B0DE0F20004AF7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10AB1B0DE0F20004AF7F /* Newker.app */,
+				C20E10C41B0DE0F20004AF7F /* NewkerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C20E10AD1B0DE0F20004AF7F /* Newker */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10B21B0DE0F20004AF7F /* AppDelegate.h */,
+				C20E10B31B0DE0F20004AF7F /* AppDelegate.m */,
+				C20E10D71B0DE14C0004AF7F /* 首页 */,
+				C20E10D41B0DE14C0004AF7F /* 热点 */,
+				C20E10E21B0DE14C0004AF7F /* 我的 */,
+				C20E10E51B0DE14C0004AF7F /* 主要 */,
+				C2501A511B0DF6C90083CA08 /* NewkerImage */,
+				C20E10BB1B0DE0F20004AF7F /* Images.xcassets */,
+				C20E10BD1B0DE0F20004AF7F /* LaunchScreen.xib */,
+				C20E10AE1B0DE0F20004AF7F /* Supporting Files */,
+				C2501A501B0DF50E0083CA08 /* PrefixHeader.pch */,
+			);
+			path = Newker;
+			sourceTree = "<group>";
+		};
+		C20E10AE1B0DE0F20004AF7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10AF1B0DE0F20004AF7F /* Info.plist */,
+				C20E10B01B0DE0F20004AF7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C20E10C71B0DE0F20004AF7F /* NewkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10CA1B0DE0F20004AF7F /* NewkerTests.m */,
+				C20E10C81B0DE0F20004AF7F /* Supporting Files */,
+			);
+			path = NewkerTests;
+			sourceTree = "<group>";
+		};
+		C20E10C81B0DE0F20004AF7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10C91B0DE0F20004AF7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C20E10D41B0DE14C0004AF7F /* 热点 */ = {
+			isa = PBXGroup;
+			children = (
+				C2501A681B0DFBFC0083CA08 /* Controller */,
+				C2501A6C1B0DFC180083CA08 /* View */,
+			);
+			path = "热点";
+			sourceTree = "<group>";
+		};
+		C20E10D71B0DE14C0004AF7F /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10D81B0DE14C0004AF7F /* NKHomeViewController.h */,
+				C20E10D91B0DE14C0004AF7F /* NKHomeViewController.m */,
+				C20E10DA1B0DE14C0004AF7F /* 天气 */,
+				C20E10DF1B0DE14C0004AF7F /* 要闻跳转 */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		C20E10DA1B0DE14C0004AF7F /* 天气 */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10DB1B0DE14C0004AF7F /* NKWeatherTableViewController.h */,
+				C20E10DC1B0DE14C0004AF7F /* NKWeatherTableViewController.m */,
+				C20E10DD1B0DE14C0004AF7F /* NKWeatherViewController.h */,
+				C20E10DE1B0DE14C0004AF7F /* NKWeatherViewController.m */,
+			);
+			path = "天气";
+			sourceTree = "<group>";
+		};
+		C20E10DF1B0DE14C0004AF7F /* 要闻跳转 */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10E01B0DE14C0004AF7F /* NKNewsbreakViewController.h */,
+				C20E10E11B0DE14C0004AF7F /* NKNewsbreakViewController.m */,
+			);
+			path = "要闻跳转";
+			sourceTree = "<group>";
+		};
+		C20E10E21B0DE14C0004AF7F /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10E31B0DE14C0004AF7F /* NKProfileViewController.h */,
+				C20E10E41B0DE14C0004AF7F /* NKProfileViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		C20E10E51B0DE14C0004AF7F /* 主要 */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10E61B0DE14C0004AF7F /* Category */,
+				C20E10EB1B0DE14C0004AF7F /* Controller */,
+				C20E10F01B0DE14C0004AF7F /* View */,
+			);
+			path = "主要";
+			sourceTree = "<group>";
+		};
+		C20E10E61B0DE14C0004AF7F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10E71B0DE14C0004AF7F /* UIBarButtonItem+Extension.h */,
+				C20E10E81B0DE14C0004AF7F /* UIBarButtonItem+Extension.m */,
+				C20E10E91B0DE14C0004AF7F /* UIView+Extension.h */,
+				C20E10EA1B0DE14C0004AF7F /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C20E10EB1B0DE14C0004AF7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10EC1B0DE14C0004AF7F /* NKNavigationController.h */,
+				C20E10ED1B0DE14C0004AF7F /* NKNavigationController.m */,
+				C20E10EE1B0DE14C0004AF7F /* NKTabBarViewController.h */,
+				C20E10EF1B0DE14C0004AF7F /* NKTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C20E10F01B0DE14C0004AF7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C20E10F11B0DE14C0004AF7F /* NKSearchBar.h */,
+				C20E10F21B0DE14C0004AF7F /* NKSearchBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2501A511B0DF6C90083CA08 /* NewkerImage */ = {
+			isa = PBXGroup;
+			children = (
+				C2501A7E1B0E1FE30083CA08 /* searchbar_textfield_search_icon@2x.png */,
+				C2501A7C1B0E1FD20083CA08 /* searchbar_textfield_background@2x.png */,
+				C2501A7A1B0E0D430083CA08 /* popover_background_right@2x.png */,
+				C2501A721B0DFDAD0083CA08 /* navigationbar_arrow_up@2x.png */,
+				C2501A701B0DFDA30083CA08 /* navigationbar_arrow_down@2x.png */,
+				C2501A521B0DF6C90083CA08 /* contenttoolbar_hd_back.png */,
+				C2501A531B0DF6C90083CA08 /* contenttoolbar_hd_back@2x.png */,
+				C2501A541B0DF6C90083CA08 /* contenttoolbar_hd_back_light.png */,
+				C2501A551B0DF6C90083CA08 /* contenttoolbar_hd_back_light@2x.png */,
+				C2501A561B0DF6C90083CA08 /* easyicon_net_24.png */,
+				C2501A571B0DF6C90083CA08 /* easyicon_net_25.png */,
+				C2501A581B0DF6C90083CA08 /* newchannel_table@2x.png */,
+				C2501A591B0DF6C90083CA08 /* newchannel_table@3x.png */,
+				C2501A5A1B0DF6C90083CA08 /* tabbar_discover@2x.png */,
+				C2501A5B1B0DF6C90083CA08 /* tabbar_home@2x.png */,
+				C2501A5C1B0DF6C90083CA08 /* tabbar_profile@2x.png */,
+			);
+			path = NewkerImage;
+			sourceTree = "<group>";
+		};
+		C2501A681B0DFBFC0083CA08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2501A691B0DFBFC0083CA08 /* NKHotspotViewController.h */,
+				C2501A6A1B0DFBFC0083CA08 /* NKHotspotViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2501A6C1B0DFC180083CA08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C20E10AA1B0DE0F20004AF7F /* Newker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C20E10CE1B0DE0F20004AF7F /* Build configuration list for PBXNativeTarget "Newker" */;
+			buildPhases = (
+				C20E10A71B0DE0F20004AF7F /* Sources */,
+				C20E10A81B0DE0F20004AF7F /* Frameworks */,
+				C20E10A91B0DE0F20004AF7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Newker;
+			productName = Newker;
+			productReference = C20E10AB1B0DE0F20004AF7F /* Newker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C20E10C31B0DE0F20004AF7F /* NewkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C20E10D11B0DE0F20004AF7F /* Build configuration list for PBXNativeTarget "NewkerTests" */;
+			buildPhases = (
+				C20E10C01B0DE0F20004AF7F /* Sources */,
+				C20E10C11B0DE0F20004AF7F /* Frameworks */,
+				C20E10C21B0DE0F20004AF7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C20E10C61B0DE0F20004AF7F /* PBXTargetDependency */,
+			);
+			name = NewkerTests;
+			productName = NewkerTests;
+			productReference = C20E10C41B0DE0F20004AF7F /* NewkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C20E10A31B0DE0F20004AF7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "谢腾飞";
+				TargetAttributes = {
+					C20E10AA1B0DE0F20004AF7F = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					C20E10C31B0DE0F20004AF7F = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = C20E10AA1B0DE0F20004AF7F;
+					};
+				};
+			};
+			buildConfigurationList = C20E10A61B0DE0F20004AF7F /* Build configuration list for PBXProject "Newker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C20E10A21B0DE0F20004AF7F;
+			productRefGroup = C20E10AC1B0DE0F20004AF7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C20E10AA1B0DE0F20004AF7F /* Newker */,
+				C20E10C31B0DE0F20004AF7F /* NewkerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C20E10A91B0DE0F20004AF7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2501A5F1B0DF6C90083CA08 /* contenttoolbar_hd_back_light.png in Resources */,
+				C20E10BF1B0DE0F20004AF7F /* LaunchScreen.xib in Resources */,
+				C2501A601B0DF6C90083CA08 /* contenttoolbar_hd_back_light@2x.png in Resources */,
+				C2501A7B1B0E0D430083CA08 /* popover_background_right@2x.png in Resources */,
+				C2501A5D1B0DF6C90083CA08 /* contenttoolbar_hd_back.png in Resources */,
+				C2501A7F1B0E1FE30083CA08 /* searchbar_textfield_search_icon@2x.png in Resources */,
+				C2501A611B0DF6C90083CA08 /* easyicon_net_24.png in Resources */,
+				C2501A641B0DF6C90083CA08 /* newchannel_table@3x.png in Resources */,
+				C2501A621B0DF6C90083CA08 /* easyicon_net_25.png in Resources */,
+				C2501A661B0DF6C90083CA08 /* tabbar_home@2x.png in Resources */,
+				C20E10BC1B0DE0F20004AF7F /* Images.xcassets in Resources */,
+				C2501A671B0DF6C90083CA08 /* tabbar_profile@2x.png in Resources */,
+				C2501A711B0DFDA30083CA08 /* navigationbar_arrow_down@2x.png in Resources */,
+				C2501A631B0DF6C90083CA08 /* newchannel_table@2x.png in Resources */,
+				C2501A731B0DFDAD0083CA08 /* navigationbar_arrow_up@2x.png in Resources */,
+				C2501A651B0DF6C90083CA08 /* tabbar_discover@2x.png in Resources */,
+				C2501A5E1B0DF6C90083CA08 /* contenttoolbar_hd_back@2x.png in Resources */,
+				C2501A7D1B0E1FD20083CA08 /* searchbar_textfield_background@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C20E10C21B0DE0F20004AF7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C20E10A71B0DE0F20004AF7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20E10FA1B0DE14C0004AF7F /* UIView+Extension.m in Sources */,
+				C20E10F61B0DE14C0004AF7F /* NKWeatherViewController.m in Sources */,
+				C20E10F71B0DE14C0004AF7F /* NKNewsbreakViewController.m in Sources */,
+				C20E10FD1B0DE14C0004AF7F /* NKSearchBar.m in Sources */,
+				C20E10FC1B0DE14C0004AF7F /* NKTabBarViewController.m in Sources */,
+				C20E10F51B0DE14C0004AF7F /* NKWeatherTableViewController.m in Sources */,
+				C20E10B41B0DE0F20004AF7F /* AppDelegate.m in Sources */,
+				C20E10F81B0DE14C0004AF7F /* NKProfileViewController.m in Sources */,
+				C20E10F91B0DE14C0004AF7F /* UIBarButtonItem+Extension.m in Sources */,
+				C2501A6B1B0DFBFC0083CA08 /* NKHotspotViewController.m in Sources */,
+				C20E10F41B0DE14C0004AF7F /* NKHomeViewController.m in Sources */,
+				C20E10B11B0DE0F20004AF7F /* main.m in Sources */,
+				C20E10FB1B0DE14C0004AF7F /* NKNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C20E10C01B0DE0F20004AF7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20E10CB1B0DE0F20004AF7F /* NewkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C20E10C61B0DE0F20004AF7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C20E10AA1B0DE0F20004AF7F /* Newker */;
+			targetProxy = C20E10C51B0DE0F20004AF7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C20E10BD1B0DE0F20004AF7F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C20E10BE1B0DE0F20004AF7F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C20E10CC1B0DE0F20004AF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C20E10CD1B0DE0F20004AF7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C20E10CF1B0DE0F20004AF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Newker/PrefixHeader.pch";
+				INFOPLIST_FILE = Newker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C20E10D01B0DE0F20004AF7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Newker/PrefixHeader.pch";
+				INFOPLIST_FILE = Newker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C20E10D21B0DE0F20004AF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewkerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newker.app/Newker";
+			};
+			name = Debug;
+		};
+		C20E10D31B0DE0F20004AF7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewkerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newker.app/Newker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C20E10A61B0DE0F20004AF7F /* Build configuration list for PBXProject "Newker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20E10CC1B0DE0F20004AF7F /* Debug */,
+				C20E10CD1B0DE0F20004AF7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C20E10CE1B0DE0F20004AF7F /* Build configuration list for PBXNativeTarget "Newker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20E10CF1B0DE0F20004AF7F /* Debug */,
+				C20E10D01B0DE0F20004AF7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C20E10D11B0DE0F20004AF7F /* Build configuration list for PBXNativeTarget "NewkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20E10D21B0DE0F20004AF7F /* Debug */,
+				C20E10D31B0DE0F20004AF7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C20E10A31B0DE0F20004AF7F /* Project object */;
+}
